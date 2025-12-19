@@ -1,0 +1,15 @@
+baseURL = "http://localhost/"
+languageCode = "vi"
+title = "Blog Cá Nhân"
+theme = "PaperMod"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 2
