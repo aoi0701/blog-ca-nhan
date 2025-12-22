@@ -1,6 +1,6 @@
 baseURL = "http://localhost/"
 languageCode = "vi"
-title = "Blog Cá Nhân"
+title = "Chào bạn đến với hành trình của tôi"
 theme = "PaperMod"
 
 [menu]
