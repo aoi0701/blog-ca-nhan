@@ -1,9 +1,11 @@
 baseURL = "http://localhost/"
 languageCode = "vi"
-title = "Chào bạn đến với hành trình của tôi"
+title = "HÀNH TRÌNH TUỔI SINH VIÊN"
 theme = "PaperMod"
 
+# ===== MENU CHÍNH =====
 [menu]
+
   [[menu.main]]
     name = "Home"
     url = "/"
@@ -13,3 +15,48 @@ theme = "PaperMod"
     name = "Blog"
     url = "/posts/"
     weight = 2
+
+  [[menu.main]]
+    name = "Nhật ký SV CNTT"
+    url = "/nhat-ky-sinh-vien/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Góc nhìn"
+    url = "/goc-nhin/"
+    weight = 4
+
+  [[menu.main]]
+    name = "Học được gì hôm nay"
+    url = "/hoc-duoc-gi-hom-nay/"
+    weight = 5
+
+  [[menu.main]]
+    name = "Hành trình học tập"
+    url = "/hanh-trinh-hoc-tap/"
+    weight = 6
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 7
+
+[params]
+  # ✅ QUAN TRỌNG: tắt list post ở Home
+    customCSS = ["css/extended/custom.css"]
+  mainSections = []
+
+  [params.profileMode]
+    enabled = true
+    title = "Trưởng"
+    subtitle = "Sinh viên CNTT | HUTECH — Lập trình mạng, Java & JavaScript"
+    imageUrl = "/images/avatar.jpg"
+    imageTitle = "Avatar"
+    imageWidth = 220
+    imageHeight = 220
+
+
+    
+    
+
+

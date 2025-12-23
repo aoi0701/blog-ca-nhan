@@ -1,5 +1,5 @@
 ---
-title: "Chào bạn đến với hành trình của tôi"
+title: "HÀNH TRÌNH SINH VIÊN"
 ---
 
 ## Xin chào 
@@ -16,4 +16,5 @@ Blog này được tạo để chia sẻ kiến thức **Lập trình mạng** v
 -  Kỹ năng: Java, JavaScript, Network Programming
 -  Mục tiêu: Hoàn thành đồ án & hệ thống hoá kiến thức
 
- Vào mục **Blog** để xem các bài viết.
+
+

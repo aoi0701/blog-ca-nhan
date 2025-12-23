@@ -1,0 +1,7 @@
+/* Avatar KHÔNG tròn – kiểu portfolio */
+.profile img {
+  border-radius: 16px !important;   /* bo góc nhẹ */
+  object-fit: cover !important;     /* ảnh vừa khung, không méo */
+  width: 240px !important;
+  height: 300px !important;         /* ảnh đứng */
+}
