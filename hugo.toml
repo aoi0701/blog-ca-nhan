@@ -1,4 +1,4 @@
-baseURL = "http://localhost/"
+baseURL = "https://aoi0701.github.io/blog-ca-nhan/"
 languageCode = "vi"
 title = "HÀNH TRÌNH TUỔI SINH VIÊN"
 theme = "PaperMod"
@@ -42,7 +42,7 @@ theme = "PaperMod"
     weight = 7
 
 [params]
-  # ✅ QUAN TRỌNG: tắt list post ở Home
+  #  QUAN TRỌNG: tắt list post ở Home
     customCSS = ["css/extended/custom.css"]
   mainSections = []
 
@@ -50,7 +50,7 @@ theme = "PaperMod"
     enabled = true
     title = "Trưởng"
     subtitle = "Sinh viên CNTT | HUTECH — Lập trình mạng, Java & JavaScript"
-    imageUrl = "/images/avatar.jpg"
+    imageUrl = "images/avatar.jpg"
     imageTitle = "Avatar"
     imageWidth = 220
     imageHeight = 220
