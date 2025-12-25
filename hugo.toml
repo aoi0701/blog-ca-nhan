@@ -46,17 +46,11 @@ theme = "PaperMod"
     customCSS = ["css/extended/custom.css"]
   mainSections = []
 
-  [params.profileMode]
-    enabled = true
-    title = "Trưởng"
-    subtitle = "Sinh viên CNTT | HUTECH — Lập trình mạng, Java & JavaScript"
-    imageUrl = "images/avatar.jpg"
-    imageTitle = "Avatar"
-    imageWidth = 220
-    imageHeight = 220
+ [params.profileMode]
+enabled = false
 
 
-    
+      
     
 
 

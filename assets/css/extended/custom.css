@@ -1,7 +1,150 @@
-/* Avatar KHÔNG tròn – kiểu portfolio */
-.profile img {
-  border-radius: 16px !important;   /* bo góc nhẹ */
-  object-fit: cover !important;     /* ảnh vừa khung, không méo */
-  width: 240px !important;
-  height: 300px !important;         /* ảnh đứng */
+/* ===== HERO HOME (PaperMod) ===== */
+
+.hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 34px 18px 10px 18px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 34px;
+  align-items: center;
 }
+
+/* Left */
+.hero__badge {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: .8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.16);
+  background: rgba(255,255,255,.06);
+  margin-bottom: 14px;
+}
+
+.hero__title {
+  font-size: 54px;
+  line-height: 1.02;
+  margin: 0;
+  letter-spacing: .3px;
+}
+.hero__title .plus {
+  opacity: .85;
+}
+
+.hero__desc {
+  margin-top: 14px;
+  max-width: 560px;
+  font-size: 16px;
+  line-height: 1.75;
+  opacity: .92;
+}
+
+/* Buttons */
+.hero__actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-weight: 700;
+  border: 1px solid rgba(255,255,255,.14);
+  text-decoration: none !important;
+  transition: transform .15s ease, background .15s ease, border-color .15s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+
+.btn--primary {
+  background: rgba(255,255,255,.14);
+  border-color: rgba(255,255,255,.22);
+}
+.btn--primary:hover {
+  background: rgba(255,255,255,.20);
+}
+.btn--ghost {
+  background: rgba(255,255,255,.06);
+}
+.btn--ghost:hover {
+  background: rgba(255,255,255,.10);
+}
+
+/* Meta */
+.hero__meta {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.meta__item {
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.04);
+  border-radius: 14px;
+  padding: 12px 12px;
+}
+.meta__label {
+  font-size: 12px;
+  opacity: .75;
+  margin-bottom: 6px;
+}
+.meta__value {
+  font-size: 14px;
+  line-height: 1.45;
+}
+.meta__value a { text-decoration: underline; }
+
+/* Right image */
+.hero__right {
+  display: flex;
+  justify-content: center;
+}
+/* .hero__img {
+  width: 100%;
+  max-width: 430px;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.12);
+  box-shadow: 0 18px 55px rgba(0,0,0,.45);
+    background: transparent;
+  border-radius: 20px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+  object-fit: cover;
+} */
+
+
+.hero_img {
+  background: transparent;
+  border-radius: 20px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+}
+
+.hero__quote{
+  margin-top: 28px;
+  font-style: italic;
+  opacity: 0.65;
+  max-width: 420px;
+}
+
+
+/* Responsive */
+@media (max-width: 980px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding-top: 18px;
+  }
+  .hero__title { font-size: 40px; }
+  .hero__meta { grid-template-columns: 1fr; }
+  .hero__right { order: -1; }
+  .hero__img { max-width: 360px; }
+}
+
+
+
+
+
