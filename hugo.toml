@@ -17,7 +17,7 @@ theme = "PaperMod"
     weight = 2
 
   [[menu.main]]
-    name = "Nhật ký SV CNTT"
+    name = "Nhật ký SV "
     url = "/nhat-ky-sinh-vien/"
     weight = 3
 
@@ -26,10 +26,7 @@ theme = "PaperMod"
     url = "/goc-nhin/"
     weight = 4
 
-  [[menu.main]]
-    name = "Học được gì hôm nay"
-    url = "/hoc-duoc-gi-hom-nay/"
-    weight = 5
+
 
   [[menu.main]]
     name = "Hành trình học tập"
@@ -37,7 +34,7 @@ theme = "PaperMod"
     weight = 6
 
   [[menu.main]]
-    name = "About"
+    name = "About Me"
     url = "/about/"
     weight = 7
 
@@ -52,5 +49,9 @@ enabled = false
 
       
     
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 

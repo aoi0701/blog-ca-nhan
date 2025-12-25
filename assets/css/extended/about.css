@@ -1,0 +1,349 @@
+.about-wrap{display:flex;gap:40px;margin-top:24px;align-items:flex-start;flex-wrap:wrap}
+.about-left{width:280px}
+.about-avatar{width:100%;max-width:260px;border-radius:16px;display:block}
+.about-name{margin:14px 0 6px}
+.about-role{color:#777;margin:0 0 16px}
+.about-card{margin-top:16px;padding:14px;border:1px solid rgba(0,0,0,.08);border-radius:14px}
+.about-card ul{margin:8px 0 0;padding-left:18px}
+.about-right{flex:1;min-width:280px}
+.about-timeline{margin:10px 0;padding-left:18px}
+.about-timeline li{margin-bottom:12px}
+
+
+/* REMOVE BULLET POINTS */
+.contact-list{
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.contact-list li{
+  list-style: none !important;
+}
+
+
+.about-wrap ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* Riêng timeline học tập */
+.about-timeline li {
+  position: relative;
+  padding-left: 0;
+  margin-bottom: 14px;
+}
+
+/* Kỹ năng card */
+.about-card ul li {
+  list-style: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+   ABOUT PAGE – CV STYLE (PaperMod)
+   Paste into: assets/css/extended/about.css
+================================ */
+
+/* --- Overall wrapper --- */
+.about-wrap{
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 42px;
+  align-items: start;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .about-wrap{
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+/* --- Left column --- */
+.about-left{
+  position: sticky;
+  top: 90px;
+}
+
+@media (max-width: 900px){
+  .about-left{
+    position: static;
+  }
+}
+
+/* Avatar */
+.about-avatar{
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+  margin: 0 auto 14px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+  border: 1px solid rgba(0,0,0,.08);
+}
+
+/* Name + role */
+.about-name{
+  text-align: center;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: .6px;
+  margin: 10px 0 6px;
+  text-transform: uppercase;
+}
+
+.about-role{
+  text-align: center;
+  opacity: .75;
+  margin: 0 0 18px;
+  font-size: 14.5px;
+}
+
+/* --- Card block (left) --- */
+.about-card{
+  background: rgba(0,0,0,.02);
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 14px;
+  padding: 16px 16px;
+  margin: 14px 0;
+  box-shadow: 0 8px 20px rgba(0,0,0,.06);
+}
+
+.dark .about-card{
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.10);
+  box-shadow: none;
+}
+
+/* Card titles like CV: "LIÊN HỆ  ─────────" */
+.about-card h3,
+.about-right h2{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0 14px;
+  font-weight: 800;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+.about-card h3::after,
+.about-right h2::after{
+  content:"";
+  flex: 1;
+  height: 2px;
+  background: rgba(0,0,0,.10);
+  border-radius: 99px;
+}
+
+.dark .about-card h3::after,
+.dark .about-right h2::after{
+  background: rgba(255,255,255,.14);
+}
+
+/* --- Contact list (no bullets) --- */
+.contact-list{
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.contact-list li{
+  list-style: none !important;
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+/* Icon circle CV style */
+.contact-list .icon{
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,.10);
+  color: rgba(0,0,0,.88);
+  font-size: 14px;
+}
+
+.dark .contact-list .icon{
+  background: rgba(255,255,255,.12);
+  color: rgba(255,255,255,.92);
+}
+
+/* Contact text/link */
+.contact-list .text{
+  line-height: 1.4;
+}
+
+.contact-list a{
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0,0,0,.22);
+}
+.dark .contact-list a{
+  border-bottom: 1px solid rgba(255,255,255,.22);
+}
+
+/* --- Skills list inside card (remove bullets, spacing) --- */
+.about-card ul{
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.about-card ul li{
+  list-style: none !important;
+  padding: 8px 0;
+  border-bottom: 1px dashed rgba(0,0,0,.10);
+  opacity: .95;
+}
+
+.dark .about-card ul li{
+  border-bottom: 1px dashed rgba(255,255,255,.12);
+}
+
+.about-card ul li:last-child{
+  border-bottom: 0;
+}
+
+/* --- Right column typography like CV paragraph --- */
+.about-right{
+  padding-top: 6px;
+}
+
+.about-right p{
+  font-size: 16px;
+  line-height: 1.9;
+  opacity: .92;
+  margin: 8px 0 18px;
+}
+
+/* Make first section "Tôi là ai?" look like CV text block */
+.about-right p{
+  background: rgba(0,0,0,.02);
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 14px;
+  padding: 14px 16px;
+}
+
+.dark .about-right p{
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.10);
+}
+
+/* --- Education list (CV style) --- */
+.edu-list{
+  margin-top: 6px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+.dark .edu-list{
+  border: 1px solid rgba(255,255,255,.10);
+}
+
+.edu-item{
+  padding: 14px 16px;
+  background: rgba(0,0,0,.015);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+
+.dark .edu-item{
+  background: rgba(255,255,255,.02);
+  border-bottom: 1px solid rgba(255,255,255,.10);
+}
+
+.edu-item:last-child{
+  border-bottom: 0;
+}
+
+/* Title + time same line */
+.edu-head{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.edu-title{
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .3px;
+  font-size: 14.5px;
+}
+
+.edu-time{
+  opacity: .65;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+/* Desc */
+.edu-desc{
+  margin-top: 6px;
+  line-height: 1.85;
+  opacity: .92;
+  font-size: 15.5px;
+}
+
+/* Mobile: time moves under title */
+@media (max-width: 680px){
+  .edu-head{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* --- Small polish: spacing between sections --- */
+.about-right h2{
+  margin-top: 20px;
+}
+
+
+/* ===== ABOUT TEXT – CV STYLE ===== */
+.about-right p{
+  font-style: italic;
+  font-size: 16.2px;
+  line-height: 1.9;
+  letter-spacing: 0.15px;
+  color: rgba(0,0,0,.85);
+
+  background: rgba(0,0,0,.02);
+  border-left: 4px solid rgba(0,0,0,.15);
+  padding: 16px 18px;
+  border-radius: 10px;
+}
+
+.dark .about-right p{
+  color: rgba(255,255,255,.88);
+  background: rgba(255,255,255,.04);
+  border-left: 4px solid rgba(255,255,255,.18);
+}
