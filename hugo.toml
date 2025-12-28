@@ -28,15 +28,12 @@ theme = "PaperMod"
 
 
 
-  [[menu.main]]
-    name = "Hành trình học tập"
-    url = "/hanh-trinh-hoc-tap/"
-    weight = 6
+
 
   [[menu.main]]
     name = "About Me"
     url = "/about/"
-    weight = 7
+    weight = 5
 
 [params]
   #  QUAN TRỌNG: tắt list post ở Home
