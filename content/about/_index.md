@@ -41,6 +41,9 @@ layout: "page"
         <li>Java: TCP/UDP, Multithread</li>
         <li>JavaScript: Web, Node.js</li>
         <li>REST API, WebSocket</li>
+    <img src="../images/30.jpg" class="about-avatar" alt="Trưởng avatar" />
+    <img src="../images/31.jpg" class="about-avatar" alt="Trưởng avatar" />
+    <img src="../images/32.jpg" class="about-avatar" alt="Trưởng avatar" />
       </ul>
     </div>
   </div>
